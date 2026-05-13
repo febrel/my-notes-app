@@ -1,0 +1,40 @@
+.note {
+    background-color: #f0bf4d;
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+
+.note .cuerpo-note {
+    padding: 10px;
+}
+
+.note input[type="text"] {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.note input[type="text"]:focus-visible {
+    outline: none;
+
+}
+
+.note .title-note {
+    background-color: #e7b84b;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 15px 15px 0 0;
+    text-align: end;
+}
+
+/* Cuando este la clase marked */
+.note.marked .title-note {
+    background-color: #5ce8f5;
+}
+
+.note.marked {
+    background-color: #bcf5f3;
+}
