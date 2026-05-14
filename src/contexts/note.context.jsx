@@ -12,7 +12,7 @@ function NoteProviderWrapper(props) {
     const [hasError, setHasError] = useState(false);
     const [loaded, setLoaded] = useState(false);
 
-    const API_URL = "https://ca3813eaa51d7e9599e7.free.beeceptor.com/api/notes";
+    const API_URL = "https://ca9414904161f8013873.free.beeceptor.com/api/notes";
 
 
     /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
