@@ -1,11 +1,10 @@
 .container-description{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .project-card {
     font-family: 'Roboto', sans-serif;
-    max-width: 800px;
+    max-width: 500px;
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;

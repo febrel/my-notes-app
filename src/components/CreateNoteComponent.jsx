@@ -1,23 +1,36 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useCallback } from "react";
 import { NoteContext } from "../contexts/note.context";
+import { toast } from 'react-toastify';
+import debounce from 'lodash.debounce';
 import "./CreateNoteComponent.css";
 
 function CreateNoteComponent() {
-    // Context retorno
+    /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        Variables - Estado - Contexto
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
     const { addNote } = useContext(NoteContext);
-
-    // Variables de estado
     const [noteTitle, setNoteTitle] = useState("");
 
-    // Funciones
+    /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        Funciones
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
     const createId = () => {
         return Date.now().toString(36) + Math.random().toString(36).slice(2);
     }
 
+    const DebouncedError = useCallback(
+        debounce((text) => {
+            toast.error(`${text}`, { toastId: 'input-toast' });
+        }, 500),
+        []
+    );
+
     const handleSubmit = (e) => {
         e.preventDefault();
+        const trimmedTitle = noteTitle.trim();
 
-        if (!noteTitle) {
+        if (!trimmedTitle) {
+            DebouncedError("El título de la nota no puede estar vacío.");
             return;
         }
 

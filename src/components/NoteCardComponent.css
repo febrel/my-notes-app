@@ -23,11 +23,29 @@
 }
 
 .note .title-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #e7b84b;
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 15px 15px 0 0;
-    text-align: end;
+}
+
+.note .borrar{
+    background-color: #F76464;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 3s ease;
+}
+
+.note .borrar:hover{
+   scale: calc(1.05);
 }
 
 /* Cuando este la clase marked */
