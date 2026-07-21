@@ -2,6 +2,8 @@
 
 Una aplicación web de notas moderna y minimalista diseñada para capturar tus ideas al instante.
 Construida con React, permite crear, editar y organizar anotaciones de forma rápida a través de una interfaz fluida e intuitiva, ideal para la productividad diaria.
+<img width="1496" height="531" alt="image" src="https://github.com/user-attachments/assets/25c910a1-5fdd-4fb0-9be5-071e256e7f30" />
+
 ## Esta versión está realizada solo de manera local
 **v1.0.0**
 <img width="1491" height="498" alt="SCR-20260513-kntw" src="https://github.com/user-attachments/assets/20b22ea6-cf56-4632-a63c-598790e95af9" />
